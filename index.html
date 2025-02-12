@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notepad</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="notepad">
+        <div class="title-bar">
+            <div class="title-bar-icon">
+                <i class="fas fa-sticky-note"></i>
+            </div>
+            <div class="title-bar-text">
+                <span id="filename">Untitled - Notepad</span>
+            </div>
+            <div class="title-bar-controls">
+                <button class="minimize"><i class="fas fa-window-minimize"></i></button>
+                <button class="maximize"><i class="fas fa-window-maximize"></i></button>
+                <button class="close"><i class="fas fa-times"></i></button>
+            </div>
+        </div>
+        <div class="toolbar">
+            <div class="menu">
+                <button class="menu-button">File</button>
+                <div class="menu-content">
+                    <button id="save" class="menu-item">Save</button>
+                    <button id="open" class="menu-item">Open</button>
+                    <button id="new" class="menu-item">New</button>
+                    <button id="clear" class="menu-item">Clear</button>
+                </div>
+            </div>
+            <div class="menu">
+                <button class="menu-button">Edit</button>
+                <div class="menu-content">
+                    <button id="copy" class="menu-item">Copy</button>
+                    <button id="paste" class="menu-item">Paste</button>
+                    <button id="delete" class="menu-item">Delete</button>
+                </div>
+            </div>
+            <div class="menu">
+                <button class="menu-button">View</button>
+                <div class="menu-content">
+                    <button id="zoom-in" class="menu-item">Zoom In</button>
+                    <button id="zoom-out" class="menu-item">Zoom Out</button>
+                    <button id="fullscreen" class="menu-item">Fullscreen</button>
+                </div>
+            </div>
+        </div>
+        <div class="tabs">
+            <button class="tab active" data-tab="0">Untitled</button>
+        </div>
+        <div class="content">
+            <textarea id="note-0" class="note active" placeholder="Start typing your note here..."></textarea>
+        </div>
+        <div class="status-bar">
+            <span id="char-count">0 characters</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
